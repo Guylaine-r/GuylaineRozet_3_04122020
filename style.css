@@ -1,1 +1,25 @@
+* {
+  border: 1px solid black;
+}
 
+/* Flexbox*/
+.flex_row_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fa-map-marker-alt {
+  display: block;
+  padding: 20px;
+}
+
+/* HEADER */
+.logo {
+  width: 160px;
+  height: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
