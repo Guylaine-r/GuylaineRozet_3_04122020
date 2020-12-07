@@ -1,8 +1,8 @@
-*{
-    border: 1px solid black;
-}
+// *{
+//     border: 1px solid black;
+// }
 
-//@import "./Utils/variables";
+@import "./Utils/variables";
 //@import "./Utils/functions";
 //@import "./Utils/mixins";
 //@import "./Utils/extensions";
@@ -12,9 +12,10 @@
 //@import "./Base/base";
 //@import "./Base/typography";
 
-//@import "./Components/buttons";
+@import "./Composants/button";
 
 @import "./Layout/header";
+@import "./Layout/footer";
 //@import "./Layout/nav";
 //@import "./Layout/container";
 //@import "./Layout/form";

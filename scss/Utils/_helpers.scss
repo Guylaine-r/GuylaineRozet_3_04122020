@@ -1,6 +1,85 @@
 /* Flexbox*/
-.flex_row_center{
+.fl_row_cent{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+.fl_row
+{
+    display: flex;
+    flex-direction: row;
+}
+.fl_row_spbw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fl_col_cent
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img_box
+{
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+/*Dimention*/
+.img_accueil
+{
+    height: 40vw;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.padd_text
+{
+    padding-left: 15px;
+}
+
+.padd_icon
+{
+    padding-right: 25px;
+}
+
+.h3_marg
+{
+    margin-bottom: 0;
+}
+
+.text_marg
+{
+    margin-top: 0;
+}
+
+/* Border */
+.bord-rad-button
+{
+   border-radius: 30px;
+}
+
+.bord-rad-fonct
+{
+    border-radius: 10px;
+}
+
+.bord_link
+{
+    text-decoration: none;
+    color:black;
+}
+
+/* liste à puces */
+.no-puce
+{
+    list-style-type: none;
+}
+
+
