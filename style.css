@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+  margin: 0;
+}
+
 /* Colors */
 /* Flexbox*/
 .fl_row_cent {
@@ -22,51 +28,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 0;
 }
 
 .img_box {
+  margin: 9px auto;
   display: flex;
-  border: 1px solid gray;
+  width: 335px;
+  box-shadow: 0px 5px 10px 0px #cfcfcf;
   border-radius: 20px;
 }
 
-/*Dimention*/
+/*Dimension*/
 .img_accueil {
-  height: 40vw;
+  height: 174px;
   width: 100%;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.padd_text {
-  padding-left: 15px;
-}
-
-.padd_icon {
-  padding-right: 25px;
-}
-
-.h3_marg {
-  margin-bottom: 0;
-}
-
-.text_marg {
-  margin-top: 0;
+.rest_figcaption {
+  padding: 0 12px;
 }
 
 /* Border */
-.bord-rad-button {
-  border-radius: 30px;
-}
-
-.bord-rad-fonct {
-  border-radius: 10px;
-}
-
-.bord_link {
+.no-bord-link {
   text-decoration: none;
-  color: black;
 }
 
 /* liste à puces */
@@ -74,20 +62,75 @@
   list-style-type: none;
 }
 
+.bg-light-grey {
+  background-color: #eaeaea;
+}
+
+.bg-medium-grey {
+  background-color: #f6f6f6;
+}
+
+.bg-heavy-grey {
+  background-color: #353535;
+}
+
+.part {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.part_title {
+  margin-left: 21px;
+}
+
 .fa-map-marker-alt {
   display: block;
   padding: 20px;
 }
 
+* {
+  font-family: Roboto;
+}
+
+.font-logo {
+  font-family: Shrikhand;
+}
+
+.cl-white {
+  color: white;
+}
+
+.cl-black {
+  color: black;
+}
+
+/* font-weight */
+.font-heavy {
+  font-weight: 500;
+}
+
 /* Button */
-.button {
+.btn {
   padding: 20px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .button_fonct {
-  padding: 25px;
-  margin: auto;
-  width: 60%;
+  display: flex;
+  text-align: center;
+  padding: 34px 0px 24px 34px;
+  margin: 10px auto;
+  width: 322px;
+  height: 76px;
+  box-shadow: 0px 5px 10px 0px #cfcfcf;
+  border-radius: 20px;
+  border: 0px #cfcfcf;
+  cursor: pointer;
+}
+
+.button_fonct_text {
+  margin-left: 24px;
 }
 
 /* HEADER */
@@ -103,15 +146,15 @@
 }
 
 /* Footer */
-.footer {
-  margin-left: 25px;
-}
-
-.logo_footer {
-  width: 30vw;
-  height: 20px;
+.omf_footer {
   margin-bottom: 25px;
   margin-top: 25px;
 }
+
+.list_footer {
+  padding-bottom: 5px;
+}
+
+/* Container */
 
 /*# sourceMappingURL=style.css.map */

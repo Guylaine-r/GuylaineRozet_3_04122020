@@ -1,12 +1,29 @@
 /* Button */
-.button
+
+//bouton explorer
+.btn
 {
    padding: 20px;
+   border-radius: 30px;
+   cursor: pointer;
 }
 
+//boutons fonctionnement
 .button_fonct
 {
-    padding: 25px;
-    margin: auto;
-    width: 60%;
+    display: flex;
+    text-align: center;
+    padding: 34px 0px 24px 34px;
+    margin: 10px auto;
+    width: 322px;
+    height: 76px;
+    @include border-shadow($color_shadow);
+    border-radius: 20px;
+    border: 0px $color_shadow;
+    cursor: pointer;
+}
+
+.button_fonct_text
+{
+    margin-left: 24px;
 }

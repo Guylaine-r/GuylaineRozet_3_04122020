@@ -1,26 +1,31 @@
 // *{
 //     border: 1px solid black;
 // }
+body
+{
+    margin: 0;
+}
 
 @import "./Utils/variables";
 //@import "./Utils/functions";
-//@import "./Utils/mixins";
+@import "./Utils/mixins";
 //@import "./Utils/extensions";
 @import "./Utils/helpers";
 @import "./Utils/icon";
 
 //@import "./Base/base";
-//@import "./Base/typography";
+@import "./Base/typography";
 
 @import "./Composants/button";
 
 @import "./Layout/header";
 @import "./Layout/footer";
 //@import "./Layout/nav";
-//@import "./Layout/container";
+@import "./Layout/container";
 //@import "./Layout/form";
 
 //@import "./Pages/work";
 //@import "./Pages/about";
 //@import "./Pages/project";
+
 

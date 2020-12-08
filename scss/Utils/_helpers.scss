@@ -20,60 +20,38 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 0;
 }
 
 .img_box
 {
+    margin: 9px auto;
     display: flex;
-    border: 1px solid gray;
+    width: 335px;
+    @include border-shadow($color_shadow);
     border-radius: 20px;
 }
 
-/*Dimention*/
+/*Dimension*/
 .img_accueil
 {
-    height: 40vw;
+    height: 174px;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.padd_text
+.rest_figcaption
 {
-    padding-left: 15px;
-}
-
-.padd_icon
-{
-    padding-right: 25px;
-}
-
-.h3_marg
-{
-    margin-bottom: 0;
-}
-
-.text_marg
-{
-    margin-top: 0;
+    padding: 0 12px;
 }
 
 /* Border */
-.bord-rad-button
-{
-   border-radius: 30px;
-}
 
-.bord-rad-fonct
-{
-    border-radius: 10px;
-}
-
-.bord_link
+.no-bord-link
 {
     text-decoration: none;
-    color:black;
 }
 
 /* liste à puces */
@@ -82,4 +60,30 @@
     list-style-type: none;
 }
 
+// Background colors
+.bg-light-grey
+{
+    background-color: #eaeaea;
+}
 
+.bg-medium-grey
+{
+    background-color: #f6f6f6;
+}
+
+.bg-heavy-grey
+{
+    background-color: #353535;
+}
+
+// Part margin
+.part
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.part_title
+{
+    margin-left: 21px;
+}
