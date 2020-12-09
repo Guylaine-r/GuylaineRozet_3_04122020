@@ -7,11 +7,11 @@ body
 }
 
 @import "./Utils/variables";
-//@import "./Utils/functions";
+@import "./Utils/functions";
 @import "./Utils/mixins";
 //@import "./Utils/extensions";
 @import "./Utils/helpers";
-@import "./Utils/icon";
+@import "./Utils/icons";
 
 //@import "./Base/base";
 @import "./Base/typography";

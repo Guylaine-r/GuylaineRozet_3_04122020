@@ -1,0 +1,10 @@
+@function changelight($clr, $light)
+{
+    $hue: hue($clr);
+    $sat: saturation($clr);
+    $lighten: hsl($hue, $sat, $light);
+    @return $lighten;
+}
+
+
+
