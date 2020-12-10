@@ -9,6 +9,7 @@ body {
 /* Colors */
 /* Bonton fonctionnement couleur claire*/
 /* "Nouveau" Texte couleur assombri */
+/* hover border shadow image */
 /* Flexbox*/
 .fl_row_cent {
   display: flex;
@@ -37,27 +38,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.img_box {
-  margin: 9px auto;
-  display: flex;
-  width: 335px;
-  box-shadow: 2px 5px 10px 2px #cfcfcf;
-  border-radius: 20px;
-}
-
-/*Dimension*/
-.img_accueil {
-  height: 174px;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.rest_figcaption {
-  padding: 0 12px;
 }
 
 /* Border */
@@ -114,11 +94,13 @@ body {
   position: absolute;
 }
 
+/* icone position map */
 .fa-map-marker-alt {
   display: block;
   padding: 20px;
 }
 
+/* Bouton fonctionnement */
 .nb-icon {
   border: 1px solid #9356DC;
   background-color: #9356DC;
@@ -127,6 +109,11 @@ body {
   height: 20px;
   position: absolute;
   left: -10px;
+}
+
+/* Icone coeur image restaurants */
+.container {
+  display: block;
 }
 
 .fa-heart .container {
@@ -142,6 +129,7 @@ body {
 }
 
 .heart-fill {
+  display: block;
   background: linear-gradient(to top, #FF79DA, #9356DC);
   position: absolute;
   height: 100%;
@@ -149,6 +137,30 @@ body {
   transform: scaleY(0);
   transition: transform 0.5s ease-in-out;
   transform-origin: 0% 100%;
+}
+
+.img_box {
+  margin: 9px auto;
+  display: flex;
+  width: 335px;
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+}
+.img_box:hover {
+  box-shadow: 4px 5px 10px 4px #cfcfcf;
+}
+
+/*Dimension*/
+.img_accueil {
+  height: 174px;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.rest_figcaption {
+  padding: 0 12px;
 }
 
 * {
@@ -197,7 +209,7 @@ body {
   margin: 10px auto;
   width: 322px;
   height: 76px;
-  box-shadow: 2px 5px 10px 2px #cfcfcf;
+  box-shadow: 4px 5px 10px 4px #cfcfcf;
   border-radius: 20px;
   border: 0px #cfcfcf;
   cursor: pointer;

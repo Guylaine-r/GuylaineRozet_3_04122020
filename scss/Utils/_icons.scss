@@ -1,8 +1,10 @@
+/* icone position map */
 .fa-map-marker-alt{
     display: block;
     padding: 20px;
 }
 
+/* Bouton fonctionnement */
 .nb-icon{
     border: 1px solid $color_primaire;
     background-color: $color_primaire;
@@ -11,6 +13,12 @@
     height: 20px;
     position: absolute;
     left: -10px;
+}
+
+/* Icone coeur image restaurants */
+.container
+{
+    display: block;
 }
 
 .fa-heart .container
@@ -29,6 +37,7 @@
 
 .heart-fill
 {
+    display: block;
     background: linear-gradient(to top, $color_secondaire, $color_primaire);
     position: absolute;
     height: 100%;
