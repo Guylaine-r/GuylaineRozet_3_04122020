@@ -27,7 +27,7 @@
     <p class="text_header font-size-text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
 
     <div class="fl_row_cent">
-      <button type="submit" class="btn btn-color cl-white font-heavy font-size-text">
+      <button type="submit" class="btn btn-clr-gradient cl-white font-heavy font-size-text">
         Explorer nos restaurants
       </button>
     </div>
@@ -37,16 +37,27 @@
     <h2 class="part_title">Fonctionnement</h2>
     <div class="fl_col_cent">
       <button type="submit" class="button_fonct">
-        <i class="fas fa-mobile-alt fa-lg"></i>
-        <span class="button_fonct_text font-heavy font-size-text">Choisissez un restaurant</span>
+        <span class="nb-icon cl-white">1</span>
+        <span class="static">
+          <i class="fas fa-mobile-alt fa-lg"></i>
+          <span class="button_fonct_text font-heavy font-size-text">Choisissez un restaurant</span>
+        </span>
       </button>
+      
       <button type="submit" class="button_fonct">
-        <i class="fas fa-list-ul fa-lg"></i>
-        <span class="button_fonct_text font-heavy font-size-text">Composez votre menu</span>
+        <span class="cl-white nb-icon">2</span>
+        <div class="static">
+          <i class="fas fa-list-ul fa-lg"></i>
+          <span class="button_fonct_text font-heavy font-size-text">Composez votre menu</span>
+        </div>
       </button>
+  
       <button type="submit" class="button_fonct">
-        <i class="fas fa-store fa-lg"></i>
-        <span class="button_fonct_text font-heavy font-size-text">Dégustez au restaurant</span>
+        <span class=" cl-white nb-icon">3</span>
+        <div class="static">
+          <i class="fas fa-store fa-lg"></i>
+          <span class="button_fonct_text font-heavy font-size-text">Dégustez au restaurant</span>
+        </div>
       </button>
     </div>
   </div>
@@ -54,18 +65,24 @@
   <div class="bg-light-grey part">
     <h2 class="part_title">Restaurants</h2>
     <figure class="img_box fl_col_cent">
-      <a href="#">
+      <a class="pos-rel" href="palette_gout.html">
+        <div class="fl_row_cent new-ctn">
+          <span class="cl-new-ctn">Nouveau</span>
+        </div>
         <img class="img_accueil" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
           alt="la palette du goût">
       </a>
       <figcaption class="rest_figcaption">
-        <a class="fl_row_spbw no-bord-link cl-black" href="#">
+        <a class="fl_row_spbw no-bord-link cl-black" href="palette_gout.html">
           <div>
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
+            <h3 class="low-marg-h3">La palette du goût</h3>
+            <p class="low-marg-p">Ménilmontant</p>
           </div>
           <div class="fl_col_cent icon_padd">
-            <i class="far fa-heart fa-lg">
+            <i class="far fa-heart fa-lg pos-rel">
+              <div class="container">
+                <div class="heart-fill clr-gradient"></div>
+              </div>
             </i>
           </div>
         </a>
@@ -73,17 +90,24 @@
     </figure>
 
     <figure class="img_box fl_col_cent">
-      <a href="#">
+      <a class="pos-rel" href="#">
+        <div class="fl_row_cent new-ctn">
+          <span class="cl-new-ctn">Nouveau</span>
+        </div>
         <img class="img_accueil" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la note enchantée">
       </a>
       <figcaption class="rest_figcaption">
         <a class=" fl_row_spbw no-bord-link cl-black" href="#">
           <div>
-            <h3>La note enchantée</h3>
-            <p>Charonne</p>
+            <h3 class="low-marg-h3">La note enchantée</h3>
+            <p class="low-marg-p">Charonne</p>
           </div>
           <div class="fl_col_cent icon_padd">
-            <i class="far fa-heart fa-lg"></i>
+            <i class="far fa-heart fa-lg pos-rel">
+              <div class="container">
+                <div class="heart-fill clr-gradient"></div>
+              </div>
+            </i>
           </div>
         </a>
       </figcaption>
@@ -96,11 +120,15 @@
       <figcaption class="rest_figcaption">
         <a class=" fl_row_spbw no-bord-link cl-black" href="#">
           <div>
-            <h3>A la française</h3>
-            <p>Cité Rouge</p>
+            <h3 class="low-marg-h3">A la française</h3>
+            <p class="low-marg-p">Cité Rouge</p>
           </div>
           <div class="fl_col_cent icon_padd">
-            <i class="far fa-heart fa-lg"></i>
+            <i class="far fa-heart fa-lg pos-rel">
+              <div class="container">
+                <div class="heart-fill clr-gradient"></div>
+              </div>
+            </i>
           </div>
         </a>
       </figcaption>
@@ -114,18 +142,22 @@
       <figcaption class="rest_figcaption">
         <a class=" fl_row_spbw no-bord-link cl-black" href="#">
           <div>
-            <h3>Le délice des sens</h3>
-            <p>Folie-Méricourt</p>
+            <h3 class="low-marg-h3">Le délice des sens</h3>
+            <p class="low-marg-p">Folie-Méricourt</p>
           </div>
           <div class="fl_col_cent icon_padd">
-            <i class="far fa-heart fa-lg"></i>
+            <i class="far fa-heart fa-lg pos-rel">
+              <div class="container">
+                <div class="heart-fill clr-gradient"></div>
+              </div>
+            </i>
           </div>
         </a>
       </figcaption>
     </figure>
   </div>
 
-  <footer class="bg-heavy-grey part">
+  <footer class="bg-heavy-grey part-footer">
     <div>
       <ul class="no-bord-link no-puce cl-white">
         <li class="omf_footer font-logo">ohmyfood</li>

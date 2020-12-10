@@ -1,1 +1,26 @@
 /* Container */
+
+.new-ctn
+{
+    background-color: $color_tertiaire;
+    position: absolute;
+    z-index : 1; 
+    width: 79px;
+    height: 29px;
+    left: 243px;
+    top: 13px;
+    border-radius: 3px;
+}
+
+.new-ctn span {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.cl-new-ctn
+{
+    color: changedark($color_tertiaire, 40%);
+}

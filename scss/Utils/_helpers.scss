@@ -9,10 +9,17 @@
     display: flex;
     flex-direction: row;
 }
+
 .fl_row_spbw{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.fl_row_around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .fl_col_cent
@@ -20,8 +27,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 0;
 }
+
 
 .img_box
 {
@@ -63,12 +70,13 @@
 // Background colors
 .bg-light-grey
 {
-    background-color: #eaeaea;
+    background-color: #f6f6f6;
+   
 }
 
 .bg-medium-grey
 {
-    background-color: #f6f6f6;
+    background-color: #eaeaea;
 }
 
 .bg-heavy-grey
@@ -79,11 +87,39 @@
 // Part margin
 .part
 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.part-footer
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .part_title
 {
     margin-left: 21px;
+}
+
+.low-marg-h3
+{
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.low-marg-p
+{
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+// Positioning
+.pos-rel
+{
+    position: relative;
+}
+
+.pos-abs
+{
+    position: absolute;
 }

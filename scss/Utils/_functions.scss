@@ -1,3 +1,4 @@
+/* Bonton fonctionnement couleur claire*/
 @function changelight($clr, $light)
 {
     $hue: hue($clr);
@@ -6,5 +7,12 @@
     @return $lighten;
 }
 
-
+/* "Nouveau" Texte couleur assombri */
+@function changedark($clr, $light)
+{
+    $hue: hue($clr);
+    $sat: saturation($clr);
+    $darken: hsl($hue, $sat, $light);
+    @return $darken;
+}
 

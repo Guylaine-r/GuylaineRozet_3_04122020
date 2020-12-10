@@ -2,3 +2,38 @@
     display: block;
     padding: 20px;
 }
+
+.nb-icon{
+    border: 1px solid $color_primaire;
+    background-color: $color_primaire;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -10px;
+}
+
+.fa-heart .container
+{
+    clip-path: polygon(6% 45%,9% 19%,25% 8%,41% 9%,52% 26%,63% 9%,80% 8%,92% 18%,95% 48%,49% 100%);
+    position: absolute;
+    height: 18px;
+    width: 100%;
+    top: -2px;
+}
+
+.fa-heart:hover .container .heart-fill
+{
+    transform: scaleY(1);
+}
+
+.heart-fill
+{
+    background: linear-gradient(to top, $color_secondaire, $color_primaire);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: scaleY(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: 0% 100%;
+}
