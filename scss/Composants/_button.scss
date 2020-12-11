@@ -7,12 +7,19 @@
    padding: 20px;
    border-radius: 30px;
    cursor: pointer;
+   &-clr-gradient
+    {
+    background: linear-gradient(to bottom, $color_secondaire, $color_primaire);
+    }
+    &:hover{
+        @include border-shadow($color_shadow);
+    }
+   &:focus{
+       outline: none; /* Enlever bordure */
+   }
 }
 
-.btn-clr-gradient
-{
-    background: linear-gradient(to bottom, $color_secondaire, $color_primaire);
-}
+
 
 //boutons fonctionnement
 .button_fonct
@@ -32,6 +39,10 @@
     &:hover {
         background-color: changelight($color_primaire, 90%);
     }
+    &:focus{
+        outline: none; /* Enlever bordure */
+    }
+
 }
 
 .button_fonct_text

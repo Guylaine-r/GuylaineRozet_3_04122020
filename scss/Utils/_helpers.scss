@@ -1,25 +1,29 @@
 /* Flexbox*/
-.fl_row_cent{
+.fl_row_cent
+{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .fl_row
 {
     display: flex;
     flex-direction: row;
 }
 
-.fl_row_spbw{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.fl_row_around{
+.fl_row_around
+{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.fl_row_spbw
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .fl_col_cent
@@ -46,16 +50,13 @@
 .bg-light-grey
 {
     background-color: #f6f6f6;
-   
 }
 
-.bg-medium-grey
-{
+.bg-medium-grey{
     background-color: #eaeaea;
 }
 
-.bg-heavy-grey
-{
+.bg-heavy-grey{
     background-color: #353535;
 }
 
@@ -81,12 +82,14 @@
 {
     margin-top: 10px;
     margin-bottom: 3px;
+    
 }
-.low-marg-p
-{
+
+.low-marg-p {
     margin-top: 3px;
     margin-bottom: 15px;
 }
+
 
 // Positioning
 .pos-rel

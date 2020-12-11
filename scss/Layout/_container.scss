@@ -25,3 +25,24 @@
     color: changedark($color_tertiaire, 40%);
 }
 
+// /* Loading spinner */
+// .loading{
+//     content:"";
+//     box-sizing: border-box;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     margin: auto;
+//     border-radius: 50%;
+//     border-top: 2px solid blue;
+//     border-right: 2px solid transparent;
+//     animation: spinner 0.7s linear infinite;
+// }
+
+// @keyframes spinner {
+//     to {
+//         transform: rotate(360deg);
+//     }
+// }

@@ -22,16 +22,16 @@ body {
   flex-direction: row;
 }
 
-.fl_row_spbw {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .fl_row_around {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.fl_row_spbw {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .fl_col_cent {
@@ -196,9 +196,15 @@ body {
   border-radius: 30px;
   cursor: pointer;
 }
-
 .btn-clr-gradient {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
+.btn:hover {
+  box-shadow: 4px 5px 10px 4px #cfcfcf;
+}
+.btn:focus {
+  outline: none;
+  /* Enlever bordure */
 }
 
 .button_fonct {
@@ -216,6 +222,10 @@ body {
 }
 .button_fonct:hover {
   background-color: #e4d5f6;
+}
+.button_fonct:focus {
+  outline: none;
+  /* Enlever bordure */
 }
 
 .button_fonct_text {
