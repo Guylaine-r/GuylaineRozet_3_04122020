@@ -67,6 +67,14 @@ body {
   padding-bottom: 50px;
 }
 
+.part-menu {
+  padding-bottom: 50px;
+}
+
+.part-ctn-menu {
+  padding-bottom: 20px;
+}
+
 .part-footer {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -76,7 +84,12 @@ body {
   margin-left: 21px;
 }
 
-.low-marg-h3 {
+.part_title_menu {
+  margin-left: 21px;
+  margin-bottom: 5px;
+}
+
+.low-marg-h {
   margin-top: 10px;
   margin-bottom: 3px;
 }
@@ -122,6 +135,7 @@ body {
   height: 18px;
   width: 100%;
   top: -2px;
+  cursor: pointer;
 }
 
 .fa-heart:hover .container .heart-fill {
@@ -139,6 +153,7 @@ body {
   transform-origin: 0% 100%;
 }
 
+/* Accueil */
 .img_box {
   margin: 9px auto;
   display: flex;
@@ -150,7 +165,7 @@ body {
   box-shadow: 4px 5px 10px 4px #cfcfcf;
 }
 
-/*Dimension*/
+/*Dimension Accueil*/
 .img_accueil {
   height: 174px;
   width: 100%;
@@ -161,6 +176,15 @@ body {
 
 .rest_figcaption {
   padding: 0 12px;
+}
+
+/* Page menu */
+.img_menu {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: relative;
 }
 
 * {
@@ -176,6 +200,10 @@ body {
   font-size: 18px;
 }
 
+.font-menu {
+  font-size: 14px;
+}
+
 .cl-white {
   color: white;
 }
@@ -187,6 +215,10 @@ body {
 /* font-weight */
 .font-heavy {
   font-weight: 500;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 /* Button */
@@ -240,6 +272,24 @@ body {
   position: static;
 }
 
+/* bouton Commander Page Menu */
+.btn-menu {
+  border: 0px;
+  padding: 15px 50px 15px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn-menu-clr-gradient {
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
+.btn-menu:hover {
+  box-shadow: 4px 5px 10px 4px #cfcfcf;
+}
+.btn-menu:focus {
+  outline: none;
+  /* Enlever bordure */
+}
+
 /* HEADER */
 .text_header {
   text-align: center;
@@ -275,6 +325,7 @@ body {
   border-radius: 3px;
 }
 
+/* Icone Nouveau Accueil */
 .new-ctn span {
   margin: 0;
   position: absolute;
@@ -285,6 +336,35 @@ body {
 
 .cl-new-ctn {
   color: #2d9f83;
+}
+
+/* Page menu */
+.ctn-menu {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 1px solid transparent;
+}
+
+.ctn-mini {
+  background-color: white;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  margin: 14px auto;
+  display: flex;
+  width: 320px;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.ctn-mini:hover {
+  box-shadow: 4px 5px 10px 4px #cfcfcf;
+}
+
+.underline-menu {
+  border: 1px solid #99E2D0;
+  width: 40px;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

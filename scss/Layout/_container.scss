@@ -12,6 +12,7 @@
     border-radius: 3px;
 }
 
+/* Icone Nouveau Accueil */
 .new-ctn span {
     margin: 0;
     position: absolute;
@@ -25,24 +26,35 @@
     color: changedark($color_tertiaire, 40%);
 }
 
-// /* Loading spinner */
-// .loading{
-//     content:"";
-//     box-sizing: border-box;
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     margin: auto;
-//     border-radius: 50%;
-//     border-top: 2px solid blue;
-//     border-right: 2px solid transparent;
-//     animation: spinner 0.7s linear infinite;
-// }
+/* Page menu */
+.ctn-menu
+{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 1px solid transparent;
+}
 
-// @keyframes spinner {
-//     to {
-//         transform: rotate(360deg);
-//     }
-// }
+.ctn-mini
+{
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin: 14px auto;
+    display: flex;
+    width: 320px;
+    border: 1px solid  changelight_border($color_shadow, 95%);
+    border-radius: 15px;
+    cursor: pointer;
+    &:hover{
+        @include border-shadow($color_shadow);
+    }
+}
+
+//soulignement titre page menu
+.underline-menu
+{
+    border: 1px solid $color_tertiaire;
+    width: 40px;
+    z-index: 1;
+}

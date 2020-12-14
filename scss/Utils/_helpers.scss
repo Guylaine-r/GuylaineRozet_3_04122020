@@ -33,8 +33,9 @@
     justify-content: center;
 }
 
-/* Border */
 
+
+/* Border */
 .no-bord-link
 {
     text-decoration: none;
@@ -67,6 +68,15 @@
     padding-bottom: 50px;
 }
 
+.part-menu
+{
+    padding-bottom: 50px;
+}
+.part-ctn-menu
+{
+    padding-bottom: 20px;
+}
+
 .part-footer
 {
     padding-top: 10px;
@@ -78,8 +88,13 @@
     margin-left: 21px;
 }
 
-.low-marg-h3
+.part_title_menu
 {
+    margin-left: 21px;
+    margin-bottom: 5px;
+}
+
+.low-marg-h {
     margin-top: 10px;
     margin-bottom: 3px;
     

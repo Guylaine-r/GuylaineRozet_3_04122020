@@ -19,8 +19,6 @@
    }
 }
 
-
-
 //boutons fonctionnement
 .button_fonct
 {
@@ -58,4 +56,23 @@
 .static
 {
     position: static;
+}
+
+/* bouton Commander Page Menu */
+.btn-menu
+{
+    border: 0px;
+    padding: 15px 50px 15px 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    &-clr-gradient
+    {
+        background: linear-gradient(to bottom, $color_secondaire, $color_primaire);
+    }
+    &:hover{
+        @include border-shadow($color_shadow);
+    }
+   &:focus{
+       outline: none; /* Enlever bordure */
+    }
 }
