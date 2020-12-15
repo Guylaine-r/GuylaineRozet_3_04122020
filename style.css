@@ -40,6 +40,12 @@ body {
   justify-content: center;
 }
 
+.fl_col_spbw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /* Border */
 .no-bord-link {
   text-decoration: none;
@@ -151,6 +157,16 @@ body {
   transform: scaleY(0);
   transition: transform 0.5s ease-in-out;
   transform-origin: 0% 100%;
+}
+
+/* Fleche page manu */
+.fa-arrow-left a {
+  cursor: pointer;
+  color: black;
+}
+
+.fa-arrow-left {
+  margin-left: 23px;
 }
 
 /* Accueil */
@@ -302,6 +318,11 @@ body {
   margin-top: 30px;
 }
 
+/* Logo Page menu */
+.logo-menu {
+  margin: auto;
+}
+
 /* Footer */
 .omf_footer {
   margin-bottom: 20px;
@@ -366,5 +387,7 @@ body {
   width: 40px;
   z-index: 1;
 }
+
+/* Animation déroulement Page menu*/
 
 /*# sourceMappingURL=style.css.map */
