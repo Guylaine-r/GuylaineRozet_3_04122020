@@ -1,5 +1,4 @@
 /* Container */
-
 .new-ctn
 {
     background-color: $color_tertiaire;
@@ -32,6 +31,7 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border: 1px solid transparent;
+    margin-top: -40px;
 }
 
 .ctn-mini
@@ -58,6 +58,14 @@
     width: 40px;
     z-index: 1;
 }
+
+/* PAGE MENU => Titres */
+.menu-titre
+{
+    width: 380px;
+    margin: auto;
+}
+
 
 /* Animation déroulement Page menu*/
 

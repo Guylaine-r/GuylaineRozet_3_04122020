@@ -33,13 +33,12 @@
     justify-content: center;
 }
 
-.fl_col_spbw
+/* Flex wrap */
+.fl-wrap
 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 
 /* Border */
 .no-bord-link
