@@ -1,4 +1,31 @@
 /* Container */
+
+/* dimension width */
+.limited
+{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.full-light
+{
+    background-color: $bg_light_grey;
+    max-width: 100%;
+}
+
+.full-medium
+{
+    background-color: $bg_medium_grey;
+    max-width: 100%;
+}
+
+.full-heavy
+{
+    background-color: $bg_heavy_grey;
+}
+
+
+/* Icone Nouveau Accueil */
 .new-ctn
 {
     background-color: $color_tertiaire;
@@ -10,8 +37,7 @@
     top: 13px;
     border-radius: 3px;
 }
-
-/* Icone Nouveau Accueil */
+ 
 .new-ctn span {
     margin: 0;
     position: absolute;
@@ -39,10 +65,10 @@
     background-color: white;
     padding-top: 5px;
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 10px;
     margin: 14px auto;
     display: flex;
-    width: 320px;
+    width: 295px;
     border: 1px solid  changelight_border($color_shadow, 95%);
     border-radius: 15px;
     cursor: pointer;
@@ -62,13 +88,7 @@
 /* PAGE MENU => Titres */
 .menu-titre
 {
-    width: 380px;
+    width: 320px;
     margin: auto;
 }
 
-
-/* Animation déroulement Page menu*/
-
-// .ctn-anim{
-//     voir pour aninamtion 
-// }

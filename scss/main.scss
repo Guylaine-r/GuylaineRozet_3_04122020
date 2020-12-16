@@ -4,7 +4,6 @@
 
 body
 {
-    max-width: 1400px;
     margin: auto;
 }
 
@@ -20,6 +19,7 @@ body
 @import "./Base/typography";
 
 @import "./Composants/button";
+@import "./Composants/animations";
 
 @import "./Layout/header";
 @import "./Layout/footer";
@@ -27,6 +27,7 @@ body
 @import "./Layout/container";
 //@import "./Layout/form";
 
+@import "./Pages/queries";
 //@import "./Pages/work";
 //@import "./Pages/about";
 //@import "./Pages/project";
