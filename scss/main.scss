@@ -10,12 +10,10 @@ body
 @import "./Utils/variables";
 @import "./Utils/functions";
 @import "./Utils/mixins";
-//@import "./Utils/extensions";
 @import "./Utils/helpers";
 @import "./Utils/icons";
 @import "./Utils/images";
 
-//@import "./Base/base";
 @import "./Base/typography";
 
 @import "./Composants/button";
@@ -23,13 +21,10 @@ body
 
 @import "./Layout/header";
 @import "./Layout/footer";
-//@import "./Layout/nav";
 @import "./Layout/container";
-//@import "./Layout/form";
+
 
 @import "./Pages/queries";
-//@import "./Pages/work";
-//@import "./Pages/about";
-//@import "./Pages/project";
+
 
 
