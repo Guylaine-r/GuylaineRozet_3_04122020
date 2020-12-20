@@ -49,6 +49,10 @@ body {
   flex-wrap: wrap;
 }
 
+.fl-grow {
+  flex: 1;
+}
+
 /* Border */
 .no-bord-link {
   text-decoration: none;
@@ -85,6 +89,10 @@ body {
   margin-bottom: 5px;
 }
 
+.auto-marg {
+  margin: auto;
+}
+
 .low-marg-h {
   margin-top: 10px;
   margin-bottom: 3px;
@@ -101,6 +109,10 @@ body {
 
 .pos-abs {
   position: absolute;
+}
+
+.width-min {
+  width: min-content;
 }
 
 /* icone position map */
@@ -229,6 +241,12 @@ body {
 
 .font-light {
   font-weight: 300;
+}
+
+.overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Button */
@@ -367,104 +385,117 @@ body {
   }
 }
 /* Animation déroulemement menu restaurant */
-.anim-hidden {
-  width: unset;
-  height: unset;
-  overflow: hidden;
-  animation-name: hid;
+.fade-1 {
+  animation-name: fading;
   animation-duration: 1000ms;
-}
-.anim-hidden--1 {
-  width: unset;
-  height: unset;
-  overflow: hidden;
-  animation-name: hid--1;
-  animation-duration: 2000ms;
-}
-.anim-hidden--2 {
-  width: unset;
-  height: unset;
-  overflow: hidden;
-  animation-name: hid--2;
-  animation-duration: 3000ms;
+  position: relative;
 }
 
-@keyframes hid {
-  0%, 50% {
-    width: 0;
-    height: 0;
-  }
-  50%, 100% {
-    width: 0;
-    height: 0;
+.fade-2 {
+  animation-name: fading-2;
+  animation-duration: 1200ms;
+  position: relative;
+}
+
+.fade-3 {
+  animation-name: fading-3;
+  animation-duration: 1000ms;
+  position: relative;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0%;
+    top: 10px;
   }
   100% {
-    width: unset;
-    height: unset;
+    opacity: 100%;
+    top: 0px;
   }
 }
-@keyframes hid--1 {
-  0%, 50% {
-    width: 0;
-    height: 0;
+@keyframes fading-2 {
+  0% {
+    opacity: 0%;
+    top: 10px;
   }
-  50%, 100% {
-    width: 0;
-    height: 0;
+  16% {
+    opacity: 0%;
+    top: 10px;
   }
   100% {
-    width: unset;
-    height: unset;
+    opacity: 100%;
+    top: 0px;
   }
 }
-@keyframes hid--2 {
-  0%, 50% {
-    width: 0;
-    height: 0;
+@keyframes fading-3 {
+  0% {
+    opacity: 0%;
+    top: 10px;
   }
-  50%, 100% {
-    width: 0;
-    height: 0;
+  29% {
+    opacity: 0%;
+    top: 10px;
   }
   100% {
-    width: unset;
-    height: unset;
+    opacity: 100%;
+    top: 0px;
   }
 }
-/* Animation clic bouton */
-.anim-appear:hover {
-  width: 80px;
-  height: 100%;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+.check-menu {
+  width: 60px;
   background-color: #99E2D0;
-  position: absolute;
-  display: inline-block;
-  right: 0;
-  top: 0;
-  z-index: 1;
-  animation-name: slideRight;
+  position: relative;
+  right: -10px;
+  top: -5px;
+  height: calc(100% + 5px);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: none;
+  animation-name: sliding;
   animation-duration: 1000ms;
-}
-
-.fa-check-circle:hover {
-  margin: auto;
-}
-
-@keyframes slideRight {
-  from {
-    right: -15%;
-  }
-  to {
-    right: 0%;
-  }
-}
-.petit_point {
-  width: 200px;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
+.ctn-mini:hover .check-menu {
+  display: flex;
+}
+
+.ctn-mini:hover .check-menu div .fas {
+  animation-name: fullrotation;
+  animation-duration: 1000ms;
+  filter: invert(100%) sepia(5%) saturate(7499%) hue-rotate(233deg) brightness(104%) contrast(121%);
+}
+
+.ctn-mini:hover .fl_col {
+  animation-name: reduction;
+  animation-duration: 1000ms;
+  max-width: 235px;
+}
+
+@keyframes sliding {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60px;
+  }
+}
+@keyframes fullrotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes reduction {
+  0% {
+    max-width: 295px;
+  }
+  100% {
+    max-width: 235px;
+  }
+}
 /* HEADER */
 .text_header {
   text-align: center;
@@ -548,6 +579,7 @@ body {
 }
 
 .ctn-mini {
+  overflow: hidden;
   background-color: white;
   padding-top: 5px;
   padding-left: 10px;
@@ -555,6 +587,7 @@ body {
   margin: 14px auto;
   display: flex;
   width: 295px;
+  height: 65px;
   border-radius: 15px;
   box-shadow: 4px 5px 10px 4px #cfcfcf;
   cursor: pointer;

@@ -58,81 +58,130 @@
 
 
 /* Animation déroulemement menu restaurant */
-
-.anim-hidden
+.fade-1
 {
-    width: unset;
-    height: unset;
-    overflow: hidden;
-    animation-name: hid;
+    animation-name: fading;
     animation-duration: 1000ms;
-    &--1{
-        width: unset;
-        height: unset;
-        overflow: hidden;
-        animation-name: hid--1;
-        animation-duration: 2000ms;
-    }
-    &--2{
-        width: unset;
-        height: unset;
-        overflow: hidden;
-        animation-name: hid--2;
-        animation-duration: 3000ms;
-    }
+    position: relative;
 }
 
-@keyframes hid {
-    0%,50% {
-        width: 0;
-        height: 0;
-    }
-    50%,100% {
-        width: 0;
-        height: 0;
+.fade-2
+{
+    animation-name: fading-2;
+    animation-duration: 1200ms;
+    position: relative;
+}
+
+.fade-3
+{
+    animation-name: fading-3;
+    animation-duration: 1000ms;
+    position: relative;
+}
+
+@keyframes fading
+{
+    0% {
+        opacity: 0%;
+        top: 10px;
     }
     100% {
-        width: unset;
-        height: unset;
+        opacity: 100%;
+        top: 0px;
     }
 }
 
-@keyframes hid--1 {
-    0%,50% {
-        width: 0;
-        height: 0;
+@keyframes fading-2
+{
+    0% {
+        opacity: 0%;
+        top: 10px;
     }
-    50%,100% {
-        width: 0;
-        height: 0;
+    16% {
+        opacity: 0%;
+        top: 10px;
     }
     100% {
-        width: unset;
-        height: unset;
+        opacity: 100%;
+        top: 0px;
     }
 }
 
-@keyframes hid--2 {
-    0%,50%{
-        width: 0;
-        height: 0;
+@keyframes fading-3
+{
+    0% {
+        opacity: 0%;
+        top: 10px;
     }
-    50%,100% {
-        width: 0;
-        height: 0;
+    29% {
+        opacity: 0%;
+        top: 10px;
     }
     100% {
-        width: unset;
-        height: unset;
+        opacity: 100%;
+        top: 0px;
     }
 }
 
-
-/* Animation clic bouton */
-
-@keyframes slideRight {
-	from {right: -15%;}
-	to {right: 0%;}
+// Check menu
+.check-menu {
+    width: 60px;
+    background-color: $color-tertiaire;
+    position: relative;
+    right: -10px;
+    top: -5px;
+    height: calc(100% + 5px);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+    animation-name: sliding;
+    animation-duration: 1000ms;
+    overflow: hidden;
 }
 
-//<div class="anim-appear"><i class="fas fa-check-circle"></i></div>
+.ctn-mini:hover .check-menu {
+    display: flex;
+}
+
+.ctn-mini:hover .check-menu div .fas {
+    animation-name: fullrotation;
+    animation-duration: 1000ms;
+    filter: invert(100%) sepia(5%) saturate(7499%) hue-rotate(233deg) brightness(104%) contrast(121%);
+}
+
+.ctn-mini:hover .fl_col
+{
+    animation-name: reduction;
+    animation-duration: 1000ms;
+    max-width: 235px;
+}
+
+@keyframes sliding
+{
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60px;
+    }
+}
+
+@keyframes fullrotation
+{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reduction
+{
+    0% {
+        max-width: 295px;
+    }
+    100% {
+        max-width: 235px;
+    }
+}

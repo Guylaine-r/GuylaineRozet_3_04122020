@@ -40,3 +40,10 @@
     font-weight: 300;
 }
 
+// Text overflow
+.overflow-ellipsis
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
