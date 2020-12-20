@@ -1,16 +1,60 @@
 /* Flexbox*/
-.fl_row_cent
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+// .fl
+// {
+//     display: flex;
+
+//     &_row
+//     {
+//         flex-direction: row;
+
+//         &_cent
+//         {
+//             justify-content: center;
+//         }
+        
+        
+//         &_around
+//         {
+//             justify-content: space-around;
+//         }
+        
+//         &_spbw
+//         {
+//             justify-content: space-between;
+//         }
+    
+//     }
+
+//     &_col
+//     {
+//         flex-direction: column;
+//         &_cent
+//         {
+//             justify-content: center;
+//         }
+//     }
+        
+//     &-wrap
+//     {
+//         flex-wrap: wrap;
+//     }
+    
+// }
+
 
 .fl_row
 {
     display: flex;
     flex-direction: row;
+    
 }
+
+.fl_row_cent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 
 .fl_row_around
 {

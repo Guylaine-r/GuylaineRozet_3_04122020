@@ -69,12 +69,18 @@
     margin: 14px auto;
     display: flex;
     width: 295px;
-    border: 1px solid  changelight_border($color_shadow, 95%);
     border-radius: 15px;
+    @include border-shadow($color_shadow);
     cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
     &:hover{
-        @include border-shadow($color_shadow);
-    }
+        transform: scale(1.02);
+   }
+    &:focus{
+        outline: none; /* Enlever bordure */
+     }
 }
 
 //soulignement titre page menu

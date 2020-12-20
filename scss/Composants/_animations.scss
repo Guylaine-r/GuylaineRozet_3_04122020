@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     animation-name: spinner;
-    animation-duration: 2000ms;
+    animation-duration: 1000ms;
     opacity: 0;
     visibility: hidden;
 }
@@ -21,7 +21,7 @@
     height: unset;
     overflow: hidden;
     animation-name: loaded;
-    animation-duration: 2000ms;
+    animation-duration: 1000ms;
 }
 
 
@@ -59,36 +59,80 @@
 
 /* Animation déroulemement menu restaurant */
 
-// $easing: cubic-bezier(.49,.18,.23,1);
-// $width: 33vh;
-// $height: 72vh;
-// $margin-right: 4vh;
-// $wid-marg: $width + $margin-right;
+.anim-hidden
+{
+    width: unset;
+    height: unset;
+    overflow: hidden;
+    animation-name: hid;
+    animation-duration: 1000ms;
+    &--1{
+        width: unset;
+        height: unset;
+        overflow: hidden;
+        animation-name: hid--1;
+        animation-duration: 2000ms;
+    }
+    &--2{
+        width: unset;
+        height: unset;
+        overflow: hidden;
+        animation-name: hid--2;
+        animation-duration: 3000ms;
+    }
+}
 
-// .anim-hidden
-// {
-//     overflow: hidden;
-//     &:not(:first-child){
-//         margin-bottom: $margin-right;
-//     }
-//     &--1{
-//         transform: translateY($wid-marg);
-//         transition: transform 700ms $easing;
-//     }
-// }
+@keyframes hid {
+    0%,50% {
+        width: 0;
+        height: 0;
+    }
+    50%,100% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: unset;
+        height: unset;
+    }
+}
+
+@keyframes hid--1 {
+    0%,50% {
+        width: 0;
+        height: 0;
+    }
+    50%,100% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: unset;
+        height: unset;
+    }
+}
+
+@keyframes hid--2 {
+    0%,50%{
+        width: 0;
+        height: 0;
+    }
+    50%,100% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: unset;
+        height: unset;
+    }
+}
 
 
 /* Animation clic bouton */
 
-// .anim-appear
-// {
-//     width: 50px;
-//     height: 100%;
-//     background-color: $color_tertiaire ;
-//     right: 0;
-//     z-index: 1;
-// }
+@keyframes slideRight {
+	from {right: -15%;}
+	to {right: 0%;}
+}
 
-// .fa-check-circle{
-//     margin: auto;
-// }
+//<div class="anim-appear"><i class="fas fa-check-circle"></i></div>

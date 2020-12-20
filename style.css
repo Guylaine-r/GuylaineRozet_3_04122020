@@ -8,17 +8,16 @@ body {
 /* Colors */
 /* Bonton fonctionnement couleur claire*/
 /* "Nouveau" Texte couleur assombri */
-/* hover border shadow image */
 /* Flexbox*/
+.fl_row {
+  display: flex;
+  flex-direction: row;
+}
+
 .fl_row_cent {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.fl_row {
-  display: flex;
-  flex-direction: row;
 }
 
 .fl_row_around {
@@ -165,11 +164,15 @@ body {
   margin: 9px auto;
   display: flex;
   width: 335px;
-  border: 1px solid #e6e6e6;
+  border: 0px solid #cfcfcf;
   border-radius: 20px;
+  box-shadow: 4px 5px 10px 4px #cfcfcf;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
 }
 .img_box:hover {
-  box-shadow: 4px 5px 10px 4px #cfcfcf;
+  transform: scale(1.03);
 }
 
 /*Dimension Accueil*/
@@ -234,12 +237,16 @@ body {
   padding: 20px;
   border-radius: 30px;
   cursor: pointer;
+  box-shadow: 4px 5px 10px 4px #cfcfcf;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+.btn:hover {
+  transform: scale(1.08);
 }
 .btn-clr-gradient {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-}
-.btn:hover {
-  box-shadow: 4px 5px 10px 4px #cfcfcf;
 }
 .btn:focus {
   outline: none;
@@ -258,9 +265,13 @@ body {
   border-radius: 20px;
   border: 0px #cfcfcf;
   cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
 }
 .button_fonct:hover {
   background-color: #e4d5f6;
+  transform: scale(1.03);
 }
 .button_fonct:focus {
   outline: none;
@@ -285,12 +296,16 @@ body {
   padding: 15px 50px 15px 50px;
   border-radius: 30px;
   cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+  box-shadow: 4px 5px 10px 4px #cfcfcf;
+}
+.btn-menu:hover {
+  transform: scale(1.08);
 }
 .btn-menu-clr-gradient {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-}
-.btn-menu:hover {
-  box-shadow: 4px 5px 10px 4px #cfcfcf;
 }
 .btn-menu:focus {
   outline: none;
@@ -305,12 +320,12 @@ body {
   top: 0;
   left: 0;
   background-color: white;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   animation-name: spinner;
-  animation-duration: 2000ms;
+  animation-duration: 1000ms;
   opacity: 0;
   visibility: hidden;
 }
@@ -320,7 +335,7 @@ body {
   height: unset;
   overflow: hidden;
   animation-name: loaded;
-  animation-duration: 2000ms;
+  animation-duration: 1000ms;
 }
 
 @keyframes spinner {
@@ -352,17 +367,102 @@ body {
   }
 }
 /* Animation déroulemement menu restaurant */
-/* Animation clic bouton */
-.anim-appear {
-  width: 50px;
-  height: 100%;
-  background-color: #99E2D0;
-  right: 0;
-  z-index: 1;
+.anim-hidden {
+  width: unset;
+  height: unset;
+  overflow: hidden;
+  animation-name: hid;
+  animation-duration: 1000ms;
+}
+.anim-hidden--1 {
+  width: unset;
+  height: unset;
+  overflow: hidden;
+  animation-name: hid--1;
+  animation-duration: 2000ms;
+}
+.anim-hidden--2 {
+  width: unset;
+  height: unset;
+  overflow: hidden;
+  animation-name: hid--2;
+  animation-duration: 3000ms;
 }
 
-.fa-check-circle {
+@keyframes hid {
+  0%, 50% {
+    width: 0;
+    height: 0;
+  }
+  50%, 100% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: unset;
+    height: unset;
+  }
+}
+@keyframes hid--1 {
+  0%, 50% {
+    width: 0;
+    height: 0;
+  }
+  50%, 100% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: unset;
+    height: unset;
+  }
+}
+@keyframes hid--2 {
+  0%, 50% {
+    width: 0;
+    height: 0;
+  }
+  50%, 100% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: unset;
+    height: unset;
+  }
+}
+/* Animation clic bouton */
+.anim-appear:hover {
+  width: 80px;
+  height: 100%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #99E2D0;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  animation-name: slideRight;
+  animation-duration: 1000ms;
+}
+
+.fa-check-circle:hover {
   margin: auto;
+}
+
+@keyframes slideRight {
+  from {
+    right: -15%;
+  }
+  to {
+    right: 0%;
+  }
+}
+.petit_point {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* HEADER */
@@ -455,12 +555,19 @@ body {
   margin: 14px auto;
   display: flex;
   width: 295px;
-  border: 1px solid #f2f2f2;
   border-radius: 15px;
+  box-shadow: 4px 5px 10px 4px #cfcfcf;
   cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
 }
 .ctn-mini:hover {
-  box-shadow: 4px 5px 10px 4px #cfcfcf;
+  transform: scale(1.02);
+}
+.ctn-mini:focus {
+  outline: none;
+  /* Enlever bordure */
 }
 
 .underline-menu {

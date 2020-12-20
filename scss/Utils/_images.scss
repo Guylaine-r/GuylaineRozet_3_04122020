@@ -4,11 +4,15 @@
     margin: 9px auto;
     display: flex;
     width: 335px;
-    border: 1px solid  changelight_border($color_shadow, 90%);
+    border: 0px solid  $color_shadow;
     border-radius: 20px;
+    @include border-shadow($color_shadow);
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
     &:hover{
-        @include border-shadow($color_shadow);
-    }
+        transform: scale(1.03);
+   }
 }
 
 

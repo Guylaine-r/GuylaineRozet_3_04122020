@@ -7,12 +7,15 @@
    padding: 20px;
    border-radius: 30px;
    cursor: pointer;
-   &-clr-gradient
-    {
-    background: linear-gradient(to bottom, $color_secondaire, $color_primaire);
-    }
-    &:hover{
-        @include border-shadow($color_shadow);
+   @include border-shadow($color_shadow);
+   transform: scale(1);
+   transition-property: transform;
+   transition-duration: 400ms;
+   &:hover{
+        transform: scale(1.08);
+   }
+   &-clr-gradient{
+        background: linear-gradient(to bottom, $color_secondaire, $color_primaire);
     }
    &:focus{
        outline: none; /* Enlever bordure */
@@ -33,9 +36,12 @@
     border-radius: 20px;
     border: 0px $color_shadow;
     cursor: pointer;
-
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
     &:hover {
         background-color: changelight($color_primaire, 90%);
+        transform: scale(1.03);
     }
     &:focus{
         outline: none; /* Enlever bordure */
@@ -65,14 +71,18 @@
     padding: 15px 50px 15px 50px;
     border-radius: 30px;
     cursor: pointer;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 400ms;
+    @include border-shadow($color_shadow);
+    &:hover{
+        transform: scale(1.08);
+   }
     &-clr-gradient
     {
         background: linear-gradient(to bottom, $color_secondaire, $color_primaire);
     }
-    &:hover{
-        @include border-shadow($color_shadow);
-    }
-   &:focus{
+    &:focus{
        outline: none; /* Enlever bordure */
     }
 }

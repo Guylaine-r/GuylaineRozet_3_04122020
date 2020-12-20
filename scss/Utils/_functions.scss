@@ -15,13 +15,3 @@
     $darken: hsl($hue, $sat, $light);
     @return $darken;
 }
-
-/* hover border shadow image */
-
-@function changelight_border($clr, $light)
-{
-    $hue: hue($clr);
-    $sat: saturation($clr);
-    $lighten: hsl($hue, $sat, $light);
-    @return $lighten;
-}
