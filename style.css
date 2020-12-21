@@ -337,7 +337,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: white;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -412,21 +411,21 @@ body {
 @keyframes fading {
   0% {
     opacity: 0%;
-    top: 10px;
+    top: 30px;
   }
   100% {
-    opacity: 100%;
+    opacity: 200%;
     top: 0px;
   }
 }
 @keyframes fading-2 {
   0% {
     opacity: 0%;
-    top: 10px;
+    top: 30px;
   }
   16% {
     opacity: 0%;
-    top: 10px;
+    top: 30px;
   }
   100% {
     opacity: 100%;
@@ -436,11 +435,11 @@ body {
 @keyframes fading-3 {
   0% {
     opacity: 0%;
-    top: 10px;
+    top: 30px;
   }
   29% {
     opacity: 0%;
-    top: 10px;
+    top: 30px;
   }
   100% {
     opacity: 100%;
@@ -450,11 +449,11 @@ body {
 @keyframes fading-4 {
   0% {
     opacity: 0%;
-    top: 10px;
+    top: 30px;
   }
   38% {
     opacity: 0%;
-    top: 10px;
+    top: 30px;
   }
   100% {
     opacity: 100%;
@@ -462,6 +461,7 @@ body {
   }
 }
 .check-menu {
+  display: none;
   width: 60px;
   background-color: #99E2D0;
   position: relative;
@@ -470,7 +470,6 @@ body {
   height: calc(100% + 5px);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  display: none;
   animation-name: sliding;
   animation-duration: 1000ms;
   overflow: hidden;

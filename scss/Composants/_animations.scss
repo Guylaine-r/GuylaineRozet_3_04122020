@@ -4,8 +4,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;    
-    background-color: white;
+    left: 0;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -90,23 +89,23 @@
 {
     0% {
         opacity: 0%;
-        top: 10px;
+        top: 30px;
     }
     100% {
-        opacity: 100%;
+        opacity: 200%;
         top: 0px;
     }
 }
 
-@keyframes fading-2
+@keyframes fading-2 
 {
     0% {
         opacity: 0%;
-        top: 10px;
+        top: 30px;
     }
     16% {
         opacity: 0%;
-        top: 10px;
+        top: 30px;
     }
     100% {
         opacity: 100%;
@@ -118,11 +117,11 @@
 {
     0% {
         opacity: 0%;
-        top: 10px;
+        top: 30px;
     }
     29% {
         opacity: 0%;
-        top: 10px;
+        top: 30px;
     }
     100% {
         opacity: 100%;
@@ -134,11 +133,11 @@
 {
     0% {
         opacity: 0%;
-        top: 10px;
+        top: 30px;
     }
     38% {
         opacity: 0%;
-        top: 10px;
+        top: 30px;
     }
     100% {
         opacity: 100%;
@@ -148,6 +147,7 @@
 
 // Check menu
 .check-menu {
+    display: none;
     width: 60px;
     background-color: $color-tertiaire;
     position: relative;
@@ -156,14 +156,15 @@
     height: calc(100% + 5px);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    display: none;
     animation-name: sliding;
     animation-duration: 1000ms;
     overflow: hidden;
 }
 
-.ctn-mini:hover .check-menu {
+.ctn-mini:hover .check-menu // 
+{
     display: flex;
+    // flex-direction: row;  //POURQUOI NE PAS LE METTRE ? A QUOI SERT LE (DISPLAY: FLEX;) TOUT SEUL ?
 }
 
 .ctn-mini:hover .check-menu div .fas {
