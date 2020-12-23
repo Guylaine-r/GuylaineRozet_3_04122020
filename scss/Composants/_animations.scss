@@ -92,7 +92,7 @@
         top: 30px;
     }
     100% {
-        opacity: 200%;
+        opacity: 100%;
         top: 0px;
     }
 }
@@ -161,10 +161,9 @@
     overflow: hidden;
 }
 
-.ctn-mini:hover .check-menu // 
+.ctn-mini:hover .check-menu
 {
-    display: flex;
-    // flex-direction: row;  //POURQUOI NE PAS LE METTRE ? A QUOI SERT LE (DISPLAY: FLEX;) TOUT SEUL ?
+    display: flex; /* Rajouter le display flex en "Hover" car cnt-mini => display: none */
 }
 
 .ctn-mini:hover .check-menu div .fas {
