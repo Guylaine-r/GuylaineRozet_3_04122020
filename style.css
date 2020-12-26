@@ -477,7 +477,7 @@ body {
 
 .ctn-mini:hover .check-menu {
   display: flex;
-  /* Rajouter le display flex en "Hover" car cnt-mini => display: none */
+  /* Rajouter le display flex en "Hover" car check-menu => display: none */
 }
 
 .ctn-mini:hover .check-menu div .fas {
